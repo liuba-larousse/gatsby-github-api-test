@@ -1,0 +1,35 @@
+/** @format */
+@import '../styles/global.scss';
+
+.layout_container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: 'navig main';
+}
+
+.layout_nav {
+  padding-top: 50px;
+
+  padding-left: 20px;
+  grid-area: navig;
+  background-color: $green;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout_main {
+  padding: 50px 10px 50px 50px;
+
+  grid-area: main;
+  background: $black;
+}
+
+.layout_link {
+  color: $white;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}

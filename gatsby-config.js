@@ -1,26 +1,57 @@
+/** @format */
+// init. environment variables
+const dotenv = require('dotenv');
+dotenv.config();
+
 module.exports = {
   siteMetadata: {
-    title: "gatsby-github-api-test",
+    title: 'gatsby-github-api-test',
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-plugin-sass`,
       options: {
-        icon: "src/images/icon.png",
+        implementation: require('node-sass'),
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: "images",
-        path: "./src/images/",
+        icon: 'src/images/icon.png',
       },
-      __key: "images",
+    },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/images/',
+      },
+      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'GitHub',
+        fieldName: 'github',
+        url: 'https://api.github.com/graphql',
+        // HTTP headers
+        headers: {
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(
+          `./src/components/Layout`
+        ),
+      },
     },
   ],
 };
