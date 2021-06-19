@@ -5,10 +5,8 @@ import { graphql } from 'gatsby';
 import * as s from '../styles/profile.module.scss';
 
 export default function Profile({ data }) {
-  console.log(data);
-
   const repoes = data.github.user.repositories.edges;
-  console.log(repoes);
+
   return (
     <div className={s.page}>
       <h1>Profile info</h1>

@@ -7,6 +7,7 @@ module.exports = {
   siteMetadata: {
     title: 'gatsby-github-api-test',
   },
+
   plugins: [
     {
       resolve: `gatsby-plugin-sass`,

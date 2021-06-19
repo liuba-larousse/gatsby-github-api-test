@@ -18,6 +18,8 @@ Here are some things I learned while building this website:
 
 ## Gatsby
 
+Layout Gatsby plugin
+
 ## Sass
 
 Bug: modules do not work ?
