@@ -38,7 +38,7 @@ export default function Profile({ data }) {
       </p>
 
       <div>
-        <h2>Repositories</h2>
+        <h2>My repositories</h2>
         <ul className={s.flexbox}>
           {repoes.map((repo) => (
             <a href={repo.node.url}>

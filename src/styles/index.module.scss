@@ -1,0 +1,15 @@
+/** @format */
+
+@import './global.scss';
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+
+.sublist {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
