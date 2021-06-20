@@ -1,8 +1,7 @@
 /** @format */
 
 import React from 'react';
-import { gql } from 'apollo-boost';
-import { useLazyQuery } from '@apollo/react-hooks';
+import { gql, useLazyQuery } from '@apollo/client';
 import * as s from '../styles/search.module.scss';
 import { RiGitRepositoryCommitsFill } from 'react-icons/ri';
 
