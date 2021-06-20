@@ -25,4 +25,7 @@ Layout Gatsby plugin
 Bug: modules do not work ?
 Solve: change `import s from "./header.module.scss"` to `import * as s from "./header.module.scss`
 
+Bug: personal acess token disappear
+Solve: add .env to .gitignore
+
 ## resources
