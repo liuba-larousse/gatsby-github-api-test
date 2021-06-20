@@ -7,13 +7,13 @@ I am Liuba, a Front-End Developer working with React. I love to create awesome s
 ---
 
 <p align="center">
-  <h2 align="center">Inatagram Clone React-Firebase App (Learning Project)</h2>
+  <h2 align="center">GitHub Repository Commits</h2>
 
   <p align="center">
 <p align="center">
-    <a href="https://instagram-clone-by-liuba.netlify.app/">View Demo</a>
+    <a href="https://gatsby-githubapi-app.netlify.app">View Demo</a>
     ·
-     <a href="https://github.com/liuba-larousse/react-firebase-instagram-clone/issues">Report Bug</a>
+     <a href="https://github.com/liuba-larousse/gatsby-github-api-test/issues">Report Bug</a>
 </p>
   </p>
 </p>
@@ -23,14 +23,15 @@ I am Liuba, a Front-End Developer working with React. I love to create awesome s
 ## About The Project
 
 <br>
-<!-- 
+
+![landing page](https://github.com/liuba-larousse/gatsby-github-api-test/blob/dynamic-pages/screenshot.png)
+
+The goal of this project is to create a web application that shows git commit history of this project.
+
+<!--
 ![landing page](https://github.com/liuba-larousse/gatsby-github-api-test/blob/context-build/instaog1.png) -->
 
-<!-- <div align="center">
-<img src="https://res.cloudinary.com/liubalarousse/image/upload/v1623167167/for%20portfolio/hotelsearch-react-demo_nuoyne.png" width="75%" alt="landing page">
-</div> -->
-
-.
+s
 
 ## Stack
 
@@ -38,12 +39,15 @@ I am Liuba, a Front-End Developer working with React. I love to create awesome s
 
 - 🧱 [Gatsby](https://reactjs.org/)
 - 📒 [GitHub API](https://developer.github.com/v3/)
-- 🎨 [Material UI](https://material-ui.com/)
+- 🎨 [Sass](https://sass-lang.com/documentation)
 - 🚀 [Netlify](https://www.netlify.com/)
 
-🔌 plugins
+#### 🔌 plugins
 
 - [gatsby-source-github-api](https://www.gatsbyjs.com/plugins/gatsby-source-github-api/)
+- [gatsby-plugin-sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
+- [gatsby-plugin-layout](https://www.gatsbyjs.com/plugins/gatsby-plugin-layout/?=gatsby%20layout#gatsby-plugin-layout)
+- [gatsby-plugin-apollo](https://www.gatsbyjs.com/plugins/gatsby-plugin-apollo/?=gatsby%20apoll)
 
 <!-- GETTING STARTED -->
 
@@ -79,22 +83,13 @@ gatsby develop
 
 ## Features
 
-- ✅ One
-<!--
-  - ⭐ useState
-  - ⭐ useEffect
-  - ⭐ Context -->
+- ✅ GitHub API used
 
-- ✅ Two
+  - ⭐ Display profile info
+  - ⭐ Display commit history
+  - ⭐ Map out git repositories related to gatsby framwork
 
-  <!-- - ⭐ User Authentication
-  - ⭐ Firestore Database (CRUD functionality)
-  - ⭐ Media Storage (upload images) -->
-
-- ✅ Three
-  - ⭐ FormControl, Input, Modal, etc.
-  - ⭐ Icons
-  - ⭐ useStyles for styling
+- ✅ Search functionality with Apollo (should be run locally)
 
 <!-- LEARNINGS -->
 
@@ -105,6 +100,37 @@ gatsby develop
 <details><summary>Toggle to see learnings here</summary>
 
 Here are some things I learned while building this website:
+
+<br>
+
+🌴 Topic
+
+🥥 Tip to remember
+
+🌿 Better code practice
+
+📖 Reading resourses
+
+<br>
+
+## Gatsby
+
+- 🥥 used gatsby-plugin-layout for setting consisten layouts across routes
+
+- 🌴 APOLLO
+  - 🥥`useLazyQuery() ` function to query on click
+  - 🥥`qql` to write the query
+  - 🥥 had to run `npm i @apollo/react-hooks`
+  - 📖 [More about LazyQuery](https://www.apollographql.com/docs/react/api/react/hooks/#uselazyquery)
+
+## Sass
+
+- 🥥 change `import s from "./header.module.scss"` to `import * as s from "./header.module.scss` due to recent changes
+- 🥥 store color varibles in a `global.scss` file for easy reuse
+
+## Git
+
+- 🥥 🌿 store acess token in .env file and add .env to .gitignore otherwise github removes token
 
 </details>
 
