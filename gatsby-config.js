@@ -15,6 +15,12 @@ module.exports = {
         implementation: require('node-sass'),
       },
     },
+    {
+      resolve: 'gatsby-plugin-apollo',
+      options: {
+        uri: 'http://localhost:8000/___graphql',
+      },
+    },
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     {

@@ -11,9 +11,9 @@ export default function Additional({ data }) {
 
   return (
     <div className={s.page}>
-      <h1> GitHub Repositories List</h1>
+      <h1> Code with Gatsby</h1>
       <ul className={s.flexbox}>
-        {repoes.slice(0, 10).map((repo) => (
+        {repoes.slice(0, 20).map((repo) => (
           <li key={repo.node.id} className={s.flex_item}>
             <div className={s.profile}>
               <img

@@ -20,6 +20,8 @@ Here are some things I learned while building this website:
 
 Layout Gatsby plugin
 
+Gatsby apollo client
+
 ## Sass
 
 Bug: modules do not work ?

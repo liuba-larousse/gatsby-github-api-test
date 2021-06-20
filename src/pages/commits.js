@@ -21,7 +21,9 @@ export default function Commits({ data }) {
       <ul className={s.flexbox}>
         {commits.map((commit, i) => (
           <li className={s.flexrow}>
-            <span className={s.order}>{i + 1}</span>
+            <span className={s.order}>
+              {commits.length - i}
+            </span>
             <div className={s.flexcolumn}>
               <span className={s.date}>
                 {commit.node.committedDate.slice(0, 10)} at{' '}

@@ -19,7 +19,10 @@ export default function Layout({ children }) {
             Commits
           </Link>
           <Link className='layout_link' to='/additional/'>
-            Additional
+            Gatsby repositories
+          </Link>
+          <Link className='layout_link' to='/search/'>
+            Search
           </Link>
         </nav>
         <main className='layout_main'>{children}</main>
