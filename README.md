@@ -24,14 +24,12 @@ I am Liuba, a Front-End Developer working with React. I love to create awesome s
 
 <br>
 
-![landing page](https://github.com/liuba-larousse/gatsby-github-api-test/blob/dynamic-pages/screenshot.png)
+![landing page](https://github.com/liuba-larousse/gatsby-github-api-test/blob/main/screenshot.png)
 
 The goal of this project is to create a web application that shows git commit history of this project.
 
 <!--
 ![landing page](https://github.com/liuba-larousse/gatsby-github-api-test/blob/context-build/instaog1.png) -->
-
-s
 
 ## Stack
 
