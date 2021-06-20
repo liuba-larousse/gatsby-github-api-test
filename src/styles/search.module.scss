@@ -2,6 +2,36 @@
 
 @import './global.scss';
 
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+  input {
+    background: $black;
+    border: none;
+    outline: none;
+    color: $white;
+  }
+  button {
+    border: none;
+    background-color: $green;
+    color: white;
+    min-width: 60px;
+    border-radius: 0px 15px 15px 0px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.input {
+  border: 0.5px solid $green;
+  padding: 1rem;
+  border-radius: 15px 0px 0px 15px;
+  min-width: 100px;
+}
+
 .flexbox {
   display: flex;
   flex-direction: column;

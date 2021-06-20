@@ -24,6 +24,8 @@ Here are some things I learned while building this website:
   - 🥥 had to run `npm i @apollo/react-hooks`
   - 📖 [More about LazyQuery](https://www.apollographql.com/docs/react/api/react/hooks/#uselazyquery)
 
+Gatsby apollo client
+
 ## Sass
 
 - 🥥 change `import s from "./header.module.scss"` to `import * as s from "./header.module.scss` due to recent changes

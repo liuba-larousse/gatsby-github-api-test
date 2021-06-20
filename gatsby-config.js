@@ -15,6 +15,18 @@ module.exports = {
         implementation: require('node-sass'),
       },
     },
+    {
+      resolve: 'gatsby-plugin-apollo',
+      options: {
+        typeName: 'GitHub',
+        fieldName: 'github',
+        uri: 'http://localhost:8000/___graphql',
+        headers: {
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          authorization: `Bearer ${process.env.GATSBY_GITHUB_TOKEN}`,
+        },
+      },
+    },
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     {
