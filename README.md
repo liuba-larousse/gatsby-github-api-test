@@ -78,7 +78,7 @@ gatsby develop
 
 ## Usage
 
-<iframe width="350" height="220" src="https://www.loom.com/embed/6682b7260c9848b5af7e7ddf1c0505e4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+[![Watch demo video](https://www.innovasouthproject.eu/wp-content/uploads/2020/07/video_player_placeholder-1024x576.gif)](https://www.loom.com/share/6682b7260c9848b5af7e7ddf1c0505e4)
 
 <!-- FEATURES-->
 
