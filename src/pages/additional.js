@@ -6,7 +6,6 @@ import * as s from '../styles/additional.module.scss';
 import { RiGitRepositoryCommitsFill } from 'react-icons/ri';
 
 export default function Additional({ data }) {
-  console.log('additional data:', data);
   const repoes = data.github.search.edges;
 
   return (

@@ -5,12 +5,8 @@ import { graphql } from 'gatsby';
 import * as s from '../styles/commits.module.scss';
 
 export default function Commits({ data }) {
-  console.log(data);
-
   const commits =
     data.github.repository.ref.target.history.edges;
-
-  console.log('commits :', commits);
 
   return (
     <div className={s.page}>

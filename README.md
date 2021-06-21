@@ -40,7 +40,7 @@ The goal of this project is to create a web application that shows git commit hi
 - 🎨 [Sass](https://sass-lang.com/documentation)
 - 🚀 [Netlify](https://www.netlify.com/)
 
-#### 🔌 plugins
+#### plugins
 
 - [gatsby-source-github-api](https://www.gatsbyjs.com/plugins/gatsby-source-github-api/)
 - [gatsby-plugin-sass](https://www.gatsbyjs.com/plugins/gatsby-plugin-sass/)
@@ -68,14 +68,17 @@ npm install
 npm install -g gatsby-cli
 
 #Start project
+npm run start
+
+#or
 gatsby develop
 ```
 
 <!-- USAGE EXAMPLES -->
 
-<!-- ## Usage -->
+## Usage
 
-<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
+<iframe width="350" height="220" src="https://www.loom.com/embed/6682b7260c9848b5af7e7ddf1c0505e4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <!-- FEATURES-->
 
@@ -87,7 +90,7 @@ gatsby develop
   - ⭐ Display commit history
   - ⭐ Map out git repositories related to gatsby framwork
 
-- ✅ Search functionality with Apollo (should be run locally)
+- ✅ Search functionality with Apollo
 
 <!-- LEARNINGS -->
 
@@ -107,13 +110,13 @@ Here are some things I learned while building this website:
 
 🌿 Better code practice
 
-📖 Reading resourses
+📖 Reading resources
 
 <br>
 
 ## Gatsby
 
-- 🥥 used gatsby-plugin-layout for setting consisten layouts across routes
+- 🥥 used gatsby-plugin-layout for setting consistent layouts across routes
 
 - 🌴 APOLLO
   - 🥥`useLazyQuery() ` function to query on click
@@ -128,7 +131,7 @@ Here are some things I learned while building this website:
 
 ## Git
 
-- 🥥 🌿 store acess token in .env file and add .env to .gitignore otherwise github removes token
+- 🥥 🌿 store access token in .env file and add .env to .gitignore otherwise github removes token
 
 </details>
 

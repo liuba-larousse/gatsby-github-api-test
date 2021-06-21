@@ -37,9 +37,6 @@ export default function Search() {
   if (loading) {
     return <h2>Loading...</h2>;
   }
-  if (data) {
-    console.log('query data', data);
-  }
 
   return (
     <div>
@@ -108,48 +105,3 @@ export default function Search() {
     </div>
   );
 }
-
-// export default function Search() {
-//   const [query, setQuery] = React.useState('gatsby');
-//   const [searchRepo, { called, loading, data }] =
-//     useLazyQuery(SEARCH);
-
-//   if (data) {
-//     console.log(data);
-//   }
-
-//   //   const repoes = data.github.search.edges;
-//   return (
-//     <>
-//       <div>
-//         <div>
-//           <label htmlFor='name'>Search </label>
-//           <input
-//             type='text'
-//             id='name'
-//             onChange={(event) => {
-//               setQuery(event.target.value);
-//             }}
-//           />
-//           <button
-//             onClick={() => {
-//               console.log('click');
-//               // query is executed here
-//               searchReo({
-//                 variables: { query },
-//               });
-//             }}
-//           >
-//             Search
-//           </button>
-//           {loading && <h2>loading...</h2>}
-//           {data
-//             ? data.github.search.edges.map((repo) => (
-//                 <h1>{repo.node.name}</h1>
-//               ))
-//             : null}
-//         </div>
-//       </div>
-//     </>
-//   );
-// }

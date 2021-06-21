@@ -36,6 +36,16 @@ const IndexPage = () => {
           how to install and run your project.
         </li>
       </ul>
+      <h2>Demo</h2>
+      <iframe
+        width='640'
+        height='402'
+        src='https://www.loom.com/embed/6682b7260c9848b5af7e7ddf1c0505e4'
+        frameborder='0'
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+      ></iframe>
     </div>
   );
 };
